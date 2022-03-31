@@ -10,7 +10,11 @@ import java.time.Duration;
 public class TestVK {
     @Test
     public void sendPictureToMyFriendInMessageVK() {
-        System.setProperty("webdriver.chrome.driver","Path to your driver");
+        // Choose your driver version.
+        var typeDriver = " ";
+        // Copy path to your driver.
+        var path = " ";
+        System.setProperty(typeDriver,path);
         ChromeDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://vk.com/");

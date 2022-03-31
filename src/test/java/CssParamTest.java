@@ -4,10 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ThirdTest {
+public class CssParamTest {
     @Test
     public void thirdTest() {
-        System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver.exe");
+        // Copy path to your driver.
+        var path = " ";
+        // Choose your driver version.
+        var typeDriver = " ";
+        System.setProperty(typeDriver,path);
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://devby.io/");
         WebElement element = driver.findElement(By.xpath("//a[text()='Вход']"));

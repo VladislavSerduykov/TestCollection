@@ -4,12 +4,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Keys;
 
-public class SecondTest {
+public class FillingFieldTest {
 
     @Test
     public void secondTest() {
+        // Choose your driver version.
+        var typeDriver = " ";
+        // Copy path to your driver.
+        var path = " ";
 
-        System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver.exe");
+        System.setProperty(typeDriver,path);
 
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://www.delivery-club.ru/novorossijsk");
